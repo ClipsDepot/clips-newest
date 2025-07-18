@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clips Depot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    #thank-you { display: none; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+<!-- Navigation -->
+<header class="fixed top-0 w-full bg-white shadow z-50">
+  <nav class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <div class="flex items-center space-x-2">
+      <img src="<!-- LOGO_BASE64 -->" alt="Clips Depot Logo" class="w-10 h-10"/>
+      <span class="font-bold text-red-600 text-xl">Clips Depot</span>
+    </div>
+    <ul class="flex space-x-6">
+      <li><a href="#home" class="hover:text-red-600">Home</a></li>
+      <li><a href="#how-it-works" class="hover:text-red-600">How It Works</a></li>
+      <li><a href="#pricing" class="hover:text-red-600">Pricing</a></li>
+      <li><a href="#start-free" class="hover:text-red-600">Start Free</a></li>
+      <li><a href="#contact" class="hover:text-red-600">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="mt-24">
+
+<!-- Home Section -->
+<section id="home" class="text-center py-24 bg-cover bg-center text-white" style="background-image: url('<!-- HOME_BG -->');">
+  <h1 class="text-4xl font-bold mb-4 drop-shadow-lg">Viral Clips That Sell. Or Grow. You Choose.</h1>
+  <p class="text-lg mb-6 drop-shadow">We turn your content or product into short-form viral videos — fast.</p>
+  <a href="#start-free" class="bg-red-600 text-white px-6 py-3 rounded">Get Your Free Clip</a>
+</section>
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="py-20 px-6 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-8">How It Works</h2>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div><h3 class="text-xl font-bold">1. Upload Your Content</h3><p>Send us your product, podcast, or long-form video.</p></div>
+    <div><h3 class="text-xl font-bold">2. We Make It Viral</h3><p>We edit, optimize, and package your clips for TikTok, Reels, or Shorts.</p></div>
+    <div><h3 class="text-xl font-bold">3. You Post & Grow</h3><p>You get high-retention clips that drive traffic, views, and sales.</p></div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section id="pricing" class="py-20 text-center bg-cover bg-center text-white" style="background-image: url('<!-- PRICING_BG -->');">
+  <h2 class="text-3xl font-bold mb-8">Pricing</h2>
+  <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+    <div class="bg-black bg-opacity-70 p-6 rounded">
+      <h3 class="text-xl font-bold mb-2">Creator Lite</h3>
+      <p class="text-2xl font-bold mb-2">$99/mo</p>
+      <p>12 clips, motion captions, 1 revision</p>
+    </div>
+    <div class="bg-black bg-opacity-70 p-6 rounded">
+      <h3 class="text-xl font-bold mb-2">Sales Booster</h3>
+      <p class="text-2xl font-bold mb-2">$249/mo</p>
+      <p>10 product clips, hooks, CTAs included</p>
+    </div>
+    <div class="bg-black bg-opacity-70 p-6 rounded">
+      <h3 class="text-xl font-bold mb-2">Partner Plan</h3>
+      <p class="text-2xl font-bold mb-2">$0 upfront</p>
+      <p>Rev-share model — we only win if you do</p>
+    </div>
+  </div>
+</section>
+
+<!-- Start Free Section -->
+<section id="start-free" class="py-20 px-6 bg-cover bg-center text-white" style="background-image: url('<!-- START_BG -->');">
+  <h2 class="text-3xl font-bold mb-8 text-white">Start Free</h2>
+  <form onsubmit="event.preventDefault(); document.getElementById('thank-you').style.display='block'; window.scrollTo(0,document.body.scrollHeight);" class="max-w-2xl mx-auto text-left space-y-6 bg-black bg-opacity-60 p-6 rounded shadow">
+    <div>
+      <label class="block font-semibold mb-1">Name</label>
+      <input type="text" class="w-full border px-4 py-2 rounded text-black" placeholder="Your Name" />
+    </div>
+    <div>
+      <label class="block font-semibold mb-1">Email</label>
+      <input type="email" class="w-full border px-4 py-2 rounded text-black" placeholder="you@example.com" />
+    </div>
+    <div>
+      <label class="block font-semibold mb-1">Product or Content URL</label>
+      <input type="url" class="w-full border px-4 py-2 rounded text-black" placeholder="https://..." />
+    </div>
+    <div>
+      <label class="block font-semibold mb-1">Content Goal</label>
+      <select class="w-full border px-4 py-2 rounded text-black">
+        <option>Drive Sales</option>
+        <option>Grow Followers</option>
+        <option>Brand Awareness</option>
+      </select>
+    </div>
+    <div>
+      <label class="block font-semibold mb-1">Upload File (optional)</label>
+      <input type="file" class="w-full text-white" />
+    </div>
+    <button type="submit" class="bg-red-600 text-white px-6 py-2 rounded">Submit & Get Free Clip</button>
+  </form>
+</section>
+
+<!-- Thank You Section (hidden until form submit) -->
+<section id="thank-you" class="text-center py-20 bg-green-50 text-black">
+  <h1 class="text-3xl font-bold text-green-600">✅ Thank You!</h1>
+  <p class="text-lg mt-4">We’ll review your content and begin work shortly.</p>
+  <p class="mt-2">Questions? <a href="mailto:founder@clipsdepot.com" class="text-blue-500 underline">Contact us</a></p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-6 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+  <p class="mb-4">📧 Email: <a href="mailto:founder@clipsdepot.com" class="text-red-600 underline">founder@clipsdepot.com</a></p>
+  <p class="mb-4">📞 Phone: <a href="tel:2109734423" class="text-red-600 underline">(210) 973-4423</a></p>
+  <p class="mb-6">📍 Dallas, TX</p>
+  <a href="https://tidycal.com/m2o2e71" target="_blank" class="bg-blue-600 text-white px-6 py-2 rounded">Book a Call</a>
+</section>
+
+</main>
+</body>
+</html>
